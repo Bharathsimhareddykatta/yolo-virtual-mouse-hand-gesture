@@ -12,3 +12,17 @@ YOLO (You Only Look Once) pre-trained model (can be downloaded from the official
 OpenCV
 Numpy
 PyAutoGUI (for simulating mouse movements and clicks)
+
+<h2>How It Works</h2>
+Hand Gesture Detection:
+The YOLO algorithm is used to detect the user's hand in real-time from the webcam feed.
+YOLO processes each frame of the video feed and outputs bounding boxes around detected hands.
+Mapping Gestures to Mouse Actions:
+The detected hand position (from the bounding box) is used to calculate mouse movements.
+The distance and position of the hand are mapped to corresponding cursor movements on the screen.
+Gesture-based actions like clicking are simulated using PyAutoGUI.
+Usage
+Move the Mouse: Move your hand around the screen, and the cursor will follow.
+Left Click: Use a specific hand gesture (e.g., a fist) to simulate a left mouse click.
+Right Click: Use another gesture (e.g., an open hand) to simulate a right mouse click.
+Adjust the gestures and mappings based on your use case.
